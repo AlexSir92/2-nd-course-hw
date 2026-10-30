@@ -22,6 +22,9 @@ img {
   background-image: url(./img/bg-top.png);
   height: 800px;
 }
+.header__img-mob {
+  display: none;
+}
 .header__img-bigstar {
   position: absolute;
   right: 0;
@@ -77,6 +80,22 @@ img {
   font-weight: 600;
   font-size: 24px;
   margin-top: 24px;
+}
+.header-top__but-mob {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  width: 285px;
+  height: 55px;
+  border-radius: 60px;
+  background: #202027;
+  border: 1px solid #202027;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 0;
+  display: none;
 }
 .header-top__but:hover {
   background: #ffffff;
@@ -360,15 +379,23 @@ img {
     width: 296px;
     font-size: 16px;
     text-align: center;
+    line-height: 100%;
   }
   .header-top__but {
     width: 285px;
     height: 55px;
     font-size: 16px;
     margin-top: 0;
+    display: none;
+  }
+  .header-top__but-mob {
+    display: flex;
   }
   .header__img {
     display: none;
+  }
+  .header__img-mob {
+    display: block;
   }
   .header__img-mob1 {
     position: absolute;
